@@ -16,6 +16,14 @@ html {
   line-height: 1.4;
 }
 
+:root {
+  --blanco: #b8b530;
+  --primario: rgb(0, 60, 81);
+  --secundario: #0097A7;
+  --gris: #757575;
+  --oscuro: #212121;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -139,8 +147,6 @@ body {
   color: #000;
 }
 
-
-
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2.4em;
@@ -260,31 +266,29 @@ h1.nombre-sitio span {
 
 @media (min-width: 768px) {
   .grid {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .centrar-columnas {
-      justify-content: center;
+    justify-content: center;
   }
   .columnas-4 {
-      flex: 0 0 calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
   }
   .columnas-6 {
-      flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
   }
   .columnas-8 {
-      flex: 0 0 calc(66.6% - 1rem);
+    flex: 0 0 calc(66.6% - 1rem);
   }
   .columnas-10 {
-      flex: 0 0 calc(83.3% - 1rem);
+    flex: 0 0 calc(83.3% - 1rem);
   }
   .columnas-12 {
-      flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
-
-
 
 /** Header **/
 
@@ -488,44 +492,41 @@ section.programa {
 }
 
 /* Contenido */
-div.content-bg p{
+
+div.content-bg p {
   text-align: left;
   color: #e1e1e1;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
 }
 
-div.content-bg h2{
+div.content-bg h2 {
   /* padding: 1em; */
   color: white;
-  }
+}
 
-  
-div.content-bg h2::after{
+div.content-bg h2::after {
   color: white;
   background-image: none;
-  }
-  
+}
 
-  /* Segundo Contenido */
+/* Segundo Contenido */
 
-  div.content-bg-two p{
-    text-align: left;
-    /* color: #e1e1e1; */
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  div.content-bg h2{
-    color: white;
-    }
-  
-  div.content-bg-two h2::after{
+div.content-bg-two p {
+  text-align: left;
+  /* color: #e1e1e1; */
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.content-bg h2 {
+  color: white;
+}
+
+div.content-bg-two h2::after {
   color: white;
   background-image: none;
-  }
-  
-
+}
 
 div.contenido-programa {
   position: absolute;
@@ -541,7 +542,7 @@ div.programa-evento {
   margin-top: 80px;
 }
 
-div.programa-evento h2{
+div.programa-evento h2 {
   color: #000;
 }
 
@@ -756,7 +757,7 @@ ul.lista-precios>li {
 
 div.tabla-precio {
   border: 1px solid #e1e1e1;
-  background-color: rgb(0, 60,81);;
+  background-color: rgb(0, 60, 81);
   padding: 40px 0;
   text-align: center;
   transition: all .3s ease;
@@ -786,7 +787,6 @@ div.tabla-precio ul li:before {
   color: green;
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
-  
 }
 
 div.tabla-precio h3 {
@@ -796,7 +796,7 @@ div.tabla-precio h3 {
 }
 
 div.tabla-precio p.numero {
-  color:#b8b530;
+  color: #b8b530;
   margin: 20px 0;
 }
 
@@ -816,8 +816,6 @@ div.testimoniales {
 div.testimonial {
   padding: 5px;
 }
-
-
 
 @media only screen and (min-width:768px) {
   div.testimonial {
@@ -957,7 +955,7 @@ footer .contenedor>div {
 
 @media only screen and (min-width:768px) {
   footer .contenedor>div {
-    width: 50%;
+    width: 33.3%;
     float: left;
   }
 }
@@ -1230,6 +1228,7 @@ form.login, form.invitado {
 /* @media only screen and (min-width:768px) {
   form.login,
 } */
+
 /* 
 @media only screen and (min-width:768px) {
   form.invitado {
@@ -1367,9 +1366,6 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
  *    `:before` to contain the top-margins of child elements.
  */
 
-
-
-
 .clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
@@ -1461,9 +1457,7 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
   text-align: center;
 }
 
-
 /* Nosotros **/
-
 
 .texto-nosotros blockquote {
   font-weight: 900;
@@ -1475,17 +1469,19 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
 div.texto-nosotros p {
   color: #000!important;
 }
+
 @media (min-width: 768px) {
   .entrada-blog .imagen {
-      flex-basis: 40%;
+    flex-basis: 40%;
   }
 }
-  div.espaciado {
-    padding: 4em;
-  }
 
+div.espaciado {
+  padding: 4em;
+}
 
-  /** Botones **/
+/** Botones **/
+
 .btn-two {
   display: block;
   text-align: center;
@@ -1499,51 +1495,109 @@ div.texto-nosotros p {
   font-size: 2rem;
   flex: 0 0 100%;
 }
+
 .btn-two:hover {
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
   .btn-two {
-      display: inline-block;
-      flex: 0 0 auto;
+    display: inline-block;
+    flex: 0 0 auto;
   }
 }
 
 .btn-primario {
   background-color: #000000;
 }
+
 .btn-secundario {
   background-color: #784d3c;
 }
 
 /** Contacto **/
+
 .formulario-contacto {
   background-color: #ffffff;
   padding: 5rem;
 }
+
 @media (min-width: 768px) {
   .formulario-contacto {
-      margin-top: -10rem;
+    margin-top: -10rem;
   }
 }
+
 .formulario-contacto .campo {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+
 .formulario-contacto .campo label {
   flex: 0 0 8rem;
 }
-.formulario-contacto .campo input:not([type="submit"]),
-.formulario-contacto textarea{
+
+.formulario-contacto .campo input:not([type="submit"]), .formulario-contacto textarea {
   flex: 1;
   border: 1px solid #e1e1e1;
   padding: 1rem;
 }
+
 .formulario-contacto textarea {
   height: 10rem;
 }
+
 .formulario-contacto .enviar {
   display: flex;
   justify-content: flex-end;
+}
+
+.contenedor-two {
+  margin: 0 0;
+  max-width: 1200px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  margin-bottom: 3rem;
+}
+
+@media (min-width:768px) {
+  .servicios-contenedor {
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicio {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio p {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--primario);
+}
+
+.iconos {
+  display: flex;
+  height: 90px;
+  width: 90px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primario);
+  border-radius: 50%;
+}
+
+.iconos i {
+  font-size: 2rem;
+  color: var(--blanco);
 }
