@@ -30,3 +30,33 @@ $(function () {
 
         $(".menu-movil").on("click", function () { $(".navegacion-principal").slideToggle() }); $(window).resize(function () { $(document).width() >= 768 ? $(".navegacion-principal").show() : $(".navegacion-principal").hide() }), $(".programa-evento .info-curso:first").show(), $(".menu-programa a:first").addClass("activo"), $(".menu-programa a").on("click", function () { $(".menu-programa a").removeClass("activo"), $(this).addClass("activo"), $(".ocultar").hide(); var n = $(this).attr("href"); return $(n).fadeIn(1e3), !1 }), jQuery(".resumen-evento").length > 0 && $(".resumen-evento").waypoint(function () { $(".resumen-evento li:nth-child(1) p").animateNumber({ number: 6 }, 1200), $(".resumen-evento li:nth-child(2) p").animateNumber({ number: 15 }, 1200), $(".resumen-evento li:nth-child(3) p").animateNumber({ number: 3 }, 1500), $(".resumen-evento li:nth-child(4) p").animateNumber({ number: 9 }, 1500) }, { offset: "60%" }), $(".cuenta-regresiva").countdown("2017/12/10 09:00:00", function (n) { $("#dias").html(n.strftime("%D")), $("#horas").html(n.strftime("%H")), $("#minutos").html(n.strftime("%M")), $("#segundos").html(n.strftime("%S")) }), $(".invitado-info").colorbox({ inline: !0, width: "50%" }), $(".boton_newsletter").colorbox({ inline: !0, width: "50%" })
 });
+
+
+// Anuncios para contabilizate
+const url = 'https://fb-api-5835a-default-rtdb.firebaseio.com/anuncio-contabilizate.json';
+
+fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+
+        let output = ` <div class="contenedor-anuncios">`;
+
+        data.forEach(function (anun) {
+            output += `
+            <div class="anuncio">
+            <img src="${anun.url}" alt="">
+            <div class="contenido-anuncio">
+            <h3>${anun.name} </h3>
+            <p>${anun.descripcion}</p>
+            </div>
+            </div>
+            `;
+        });
+        document.getElementById('elem').innerHTML = output;
+        // console.log(element);
+
+
+        console.log(Object.keys(data));
+    })
+    // .catch(err => console.log(err))
+
