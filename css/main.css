@@ -71,9 +71,9 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+/* textarea {
   resize: vertical;
-}
+} */
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -283,6 +283,7 @@ h1.nombre-sitio span {
       flex: 0 0 100%;
   }
 }
+
 
 
 /** Header **/
@@ -540,8 +541,8 @@ div.programa-evento {
   margin-top: 80px;
 }
 
-div.programa-evento h2, p {
-  color: #ffffff;
+div.programa-evento h2{
+  color: #000;
 }
 
 @media only screen and (min-width:768px) {
@@ -785,6 +786,7 @@ div.tabla-precio ul li:before {
   color: green;
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
+  
 }
 
 div.tabla-precio h3 {
@@ -955,7 +957,7 @@ footer .contenedor>div {
 
 @media only screen and (min-width:768px) {
   footer .contenedor>div {
-    width: 33.3%;
+    width: 50%;
     float: left;
   }
 }
@@ -1028,16 +1030,16 @@ div.caja {
   margin: 10px;
 }
 
-div.campo {
+/* div.campo {
   padding: 20px;
-}
+} */
 
-@media only screen and (min-width:768px) {
+/* @media only screen and (min-width:768px) {
   div.campo {
     float: left;
     width: 33.3%;
   }
-}
+} */
 
 div.paquetes .tabla-precio:hover {
   transform: none;
@@ -1204,7 +1206,7 @@ div.cboxElement {
 
 /** Formularios **/
 
-.mensaje {
+/* .mensaje {
   border: 3px solid green;
   padding: 10px;
   text-align: center;
@@ -1223,45 +1225,45 @@ form.login, form.invitado {
     width: 80%;
     margin: 0 auto;
   }
-}
+} */
 
 /* @media only screen and (min-width:768px) {
   form.login,
 } */
-
+/* 
 @media only screen and (min-width:768px) {
   form.invitado {
     width: 60%;
   }
-}
+} */
 
-form.login div.campo, form.invitado div.campo {
+/* form.login div.campo, form.invitado div.campo {
   width: 100%;
   float: none;
   padding: 5px;
-}
+} */
 
-form.invitado input, form.invitado textarea {
+/* form.invitado input, form.invitado textarea {
   width: 100%;
   border: 1px solid #cccccc;
-}
+} */
 
-form.invitado input[type="radio"] {
+/* form.invitado input[type="radio"] {
   width: auto;
-}
+} */
 
-form.invitado div.campo {
+/* form.invitado div.campo {
   margin-bottom: 10px;
-}
+} */
 
-form.invitado input#imagen {
+/* form.invitado input#imagen {
   border: none;
 }
 
 form.login label, form.invitado label {
   width: 80px;
   display: inline-block;
-}
+} */
 
 /** Admin **/
 
@@ -1452,6 +1454,7 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
 
 .fw-300 {
   font-weight: 300;
+  color: #000;
 }
 
 .centrar-texto {
@@ -1461,10 +1464,86 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
 
 /* Nosotros **/
 
+
+.texto-nosotros blockquote {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0;
+  padding: 1rem 0 3rem 0;
+}
+
+div.texto-nosotros p {
+  color: #000!important;
+}
 @media (min-width: 768px) {
-  .contenido-nosotros {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 2rem;
+  .entrada-blog .imagen {
+      flex-basis: 40%;
   }
+}
+  div.espaciado {
+    padding: 4em;
+  }
+
+
+  /** Botones **/
+.btn-two {
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  flex: 0 0 100%;
+}
+.btn-two:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .btn-two {
+      display: inline-block;
+      flex: 0 0 auto;
+  }
+}
+
+.btn-primario {
+  background-color: #000000;
+}
+.btn-secundario {
+  background-color: #784d3c;
+}
+
+/** Contacto **/
+.formulario-contacto {
+  background-color: #ffffff;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .formulario-contacto {
+      margin-top: -10rem;
+  }
+}
+.formulario-contacto .campo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.formulario-contacto .campo label {
+  flex: 0 0 8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+}
+.formulario-contacto textarea {
+  height: 10rem;
+}
+.formulario-contacto .enviar {
+  display: flex;
+  justify-content: flex-end;
 }
