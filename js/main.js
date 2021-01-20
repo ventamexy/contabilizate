@@ -39,7 +39,7 @@ fetch(url)
     .then((response) => response.json())
     .then((data) => {
 
-        let output = ` <div class="contenedor-anuncios">`;
+        let output = `<div class="contenedor-anuncios">`;
 
         data.forEach(function (anun) {
             output += `
@@ -54,9 +54,11 @@ fetch(url)
         });
         document.getElementById('elem').innerHTML = output;
         // console.log(element);
-
-
         console.log(Object.keys(data));
     })
     // .catch(err => console.log(err))
 
+
+// Formulario de contacto
+
+  
