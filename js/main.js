@@ -32,33 +32,38 @@ $(function () {
 });
 
 
+
+
+
+
+
 // Anuncios para contabilizate
-const url = 'https://fb-api-5835a-default-rtdb.firebaseio.com/anuncio-contabilizate.json';
+// const url = 'https://fb-api-5835a-default-rtdb.firebaseio.com/anuncio-contabilizate.json';
 
-fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
 
-        let output = `<div class="contenedor-anuncios">`;
+//         let output = `<div class="contenedor-anuncios">`;
 
-        data.forEach(function (anun) {
-            output += `
-            <div class="anuncio">
-            <img src="${anun.url}" alt="">
-            <div class="contenido-anuncio">
-            <h3>${anun.name} </h3>
-            <p>${anun.descripcion}</p>
-            </div>
-            </div>
-            `;
-        });
-        document.getElementById('elem').innerHTML = output;
-        // console.log(element);
-        console.log(Object.keys(data));
-    })
-    // .catch(err => console.log(err))
+//         data.forEach(function (anun) {
+//             output += `
+//             <div class="anuncio">
+//             <img src="${anun.url}" alt="">
+//             <div class="contenido-anuncio">
+//             <h3>${anun.name} </h3>
+//             <p>${anun.descripcion}</p>
+//             </div>
+//             </div>
+//             `;
+//         });
+//         document.getElementById('elem').innerHTML = output;
+//         // console.log(element);
+//         console.log(Object.keys(data));
+//     })
+//     // .catch(err => console.log(err))
 
 
-// Formulario de contacto
+// // Formulario de contacto
 
   

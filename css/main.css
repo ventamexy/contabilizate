@@ -1636,6 +1636,11 @@ div.espaciado {
   padding: 2rem;
 }
 
-.contenido-anuncio h3, .contenido-anuncio p {
+.contenido-anuncio h3 {
   margin: 0;
+ 
+}
+.contenido-anuncio p {
+  text-align: justify;
+  font-size: medium;
 }
