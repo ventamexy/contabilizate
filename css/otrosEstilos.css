@@ -22,6 +22,11 @@
 
 /* Estilos footer */
 
+footer a {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
 .tituloVacantes {
     background-color: var(--color-principal)!important;
     border-color: var(--color-principal)!important;
@@ -43,4 +48,29 @@
     padding: 10px;
     background-color: #335249;
     color: #fff;
+}
+
+.tituloCV {
+    background-color: var(--color-principal);
+}
+
+.titulo-vacantes {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b8b530;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.contenidoFooter .seccion {
+    background-color: var(--color-cuarto);
+}
+
+footer .titulo-principal .estilo-letra {
+    color: var(--estilo-letra);
+}
+
+footer iframe {
+    width: 100%;
+    height: 450px;
 }
