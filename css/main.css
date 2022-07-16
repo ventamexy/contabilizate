@@ -16,6 +16,10 @@ html {
   line-height: 1.4;
 }
 
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
 :root {
   --blanco: #b8b530;
   --primario: rgb(0, 60, 81);
@@ -61,7 +65,12 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
@@ -102,7 +111,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -194,7 +205,8 @@ h3 {
   border: 2px solid #b8b530;
 }
 
-.button.hollow, .button.hollow:hover {
+.button.hollow,
+.button.hollow:hover {
   background-color: white;
   color: #b8b530;
 }
@@ -234,38 +246,47 @@ h1.nombre-sitio span {
     top: 20px;
     right: 20px;
   }
+
   .char2 {
     top: 0px;
     left: -20px;
   }
+
   .char3 {
     top: 10px;
     right: 20px;
   }
+
   .char4 {
     top: 5px;
     right: 10px;
   }
+
   .char5 {
     top: 15px;
     right: 10px;
   }
+
   .char6 {
     top: 5px;
     left: 10px;
   }
+
   .char7 {
     top: 20px;
     left: -10px;
   }
+
   .char8 {
     top: 0;
     left: 10px;
   }
+
   .char9 {
     top: 10px;
     right: 20px;
   }
+
   .char10 {
     top: 20px;
     right: 20px;
@@ -278,21 +299,27 @@ h1.nombre-sitio span {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .centrar-columnas {
     justify-content: center;
   }
+
   .columnas-4 {
     flex: 0 0 calc(33.3% - 1rem);
   }
+
   .columnas-6 {
     flex: 0 0 calc(50% - 1rem);
   }
+
   .columnas-8 {
     flex: 0 0 calc(66.6% - 1rem);
   }
+
   .columnas-10 {
     flex: 0 0 calc(83.3% - 1rem);
   }
+
   .columnas-12 {
     flex: 0 0 100%;
   }
@@ -366,7 +393,7 @@ p.ciudad {
 }
 
 p.slogan {
-  text-transform: none!important;
+  text-transform: none !important;
 }
 
 p.slogan span {
@@ -458,6 +485,7 @@ nav.navegacion-principal a:hover {
     text-align: right;
     display: block;
   }
+
   nav.navegacion-principal a {
     padding: 10px 10px;
     display: inline-block;
@@ -610,7 +638,8 @@ nav.menu-programa a.activo::after {
   }
 }
 
-nav.menu-programa a i, div.detalle-evento p i {
+nav.menu-programa a i,
+div.detalle-evento p i {
   color: #b8b530;
   font-size: 1.6em;
   margin-right: 10px;
@@ -841,8 +870,8 @@ blockquote {
 }
 
 blockquote p {
-  text-align: center!important;
-  font-size: 1em!important;
+  text-align: center !important;
+  font-size: 1em !important;
   font-family: 'PT Sans', sans-serif;
   padding: 0 20px 0 65px;
 }
@@ -1206,7 +1235,7 @@ div.dia i {
 /* Colorbox **/
 
 div.cboxElement {
-  padding: 30px!important;
+  padding: 30px !important;
   text-align: center;
 }
 
@@ -1286,7 +1315,8 @@ section.admin nav a {
   padding: 5px 10px;
 }
 
-section.admin nav a:hover, #filtros a.activo {
+section.admin nav a:hover,
+#filtros a.activo {
   border-bottom: 4px solid white;
 }
 
@@ -1307,7 +1337,8 @@ table.registrados thead th {
   padding: 10px;
 }
 
-table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
+table.registrados tr:nth-child(4n),
+table.registrados tr:nth-child(4n-1) {
   background-color: #dcdcdc;
 }
 
@@ -1345,7 +1376,8 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -1374,7 +1406,8 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -1395,7 +1428,10 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -1406,7 +1442,12 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
    ========================================================================== */
 
 @media print {
-  *, *:before, *:after, *:first-letter, *:first-line {
+
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
@@ -1414,26 +1455,35 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a, a:visited {
+
+  a,
+  a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after, a[href^="javascript:"]:after {
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
-  pre, blockquote {
+
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -1441,17 +1491,25 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
   thead {
     display: table-header-group;
   }
-  tr, img {
+
+  tr,
+  img {
     page-break-inside: avoid;
   }
+
   img {
     max-width: 100% !important;
   }
-  p, h2, h3 {
+
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     page-break-after: avoid;
   }
 }
@@ -1475,7 +1533,7 @@ table.registrados tr:nth-child(4n), table.registrados tr:nth-child(4n-1) {
 }
 
 div.texto-nosotros p {
-  color: #000!important;
+  color: #000 !important;
 }
 
 @media (min-width: 768px) {
@@ -1546,7 +1604,8 @@ div.espaciado {
   flex: 0 0 8rem;
 }
 
-.formulario-contacto .campo input:not([type="submit"]), .formulario-contacto textarea {
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
   flex: 1;
   border: 1px solid #e1e1e1;
   padding: 1rem;
@@ -1578,6 +1637,7 @@ div.espaciado {
     display: flex;
     justify-content: space-between;
   }
+
   .servicio {
     flex: 0 0 calc(33.3% - 1rem);
   }
@@ -1614,9 +1674,9 @@ div.espaciado {
 
 @media (min-width: 768px) {
   .contenedor-anuncios {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -1628,7 +1688,7 @@ div.espaciado {
 
 @media (min-width: 768px) {
   .anuncio {
-      flex: 0 0 calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
   }
 }
 
@@ -1638,8 +1698,9 @@ div.espaciado {
 
 .contenido-anuncio h3 {
   margin: 0;
- 
+
 }
+
 .contenido-anuncio p {
   text-align: justify;
   font-size: medium;
