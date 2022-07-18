@@ -435,7 +435,7 @@ div.logo {
 }
 
 div.logo img {
-  width: 100%;
+  width: 250px;
 }
 
 @media only screen and (min-width:768px) {
@@ -465,7 +465,7 @@ nav.navegacion-principal a {
   clear: both;
 }
 
-nav.navegacion-principal a:hover {
+nav.navegacion-principal li:hover {
   background-color: #b8b530;
 }
 
@@ -487,12 +487,12 @@ nav.navegacion-principal a:hover {
   }
 
   nav.navegacion-principal a {
-    padding: 10px 10px;
+    padding: 5px;
     display: inline-block;
     width: auto;
     display: inline-block;
     text-align: center;
-    margin: 0 10px 0 0;
+    margin: 0px;
   }
 }
 

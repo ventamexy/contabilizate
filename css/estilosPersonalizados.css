@@ -14,3 +14,26 @@ li {
     width: 25%;
     margin: 8px auto;
 }
+
+.nav-paginas-web {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menuPrincipal {
+    width: 100%!important;
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.menuPrincipal li {
+    padding: 3px;
+}
+
+.menuPrincipal li i {
+    color: #fff;
+}
