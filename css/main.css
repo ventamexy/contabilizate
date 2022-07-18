@@ -465,7 +465,7 @@ nav.navegacion-principal a {
   clear: both;
 }
 
-nav.navegacion-principal li:hover {
+nav.navegacion-principal li:hover, .item-activo {
   background-color: #b8b530;
 }
 
@@ -1501,7 +1501,8 @@ div.espaciado {
 }
 
 .btn-primario {
-  background-color: #000000;
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
 }
 
 .btn-secundario {

@@ -1,73 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contabilizandote</title>
+    <title>Servicios - Contabilizandote</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/otrosEstilos.css">
+    <link rel="stylesheet" href="css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDL7KCQ2VB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-ZDL7KCQ2VB');
+    </script>
 </head>
-
 <body class="calendario">
-    <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
-
-    <div class="barra fixed">
+    <div class="barra">
         <div class="contenedor clearfix">
-            <div class="logo">
+            <div class="logo w-100 d-flex justify-content-center">
                 <a href="index.html">
                     <img src="img/logo.svg" alt="logo gdlwebcamp">
                 </a>
             </div>
-
             <div class="menu-movil">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
-            <nav class="navegacion-principal clearfix">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">anuncios</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="registro.html">Contactanos</a>
+            <nav class="navegacion-principal clearfix menuPrincipal" id="navbar">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contactanos</a>
+                </li>
+                <nav class="nav-paginas-web">
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://echeverriaasociados.com">Echeverria asociados</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://echeverriaasociados.com">Income Taxes USAMEX</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://echeverriaasociados.com">Registro de negocios USA</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://echeverriaasociados.com">Creación de socidades HLE</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-globe"></i>
+                        <a href="https://echeverriaasociados.com">Inmobiliaria RioMar</a>
+                    </li>
+                </nav>
             </nav>
         </div>
-        <!--.contenedor-->
     </div>
-    <!--.barra-->
-
-    <section class="seccion contenedor">
-        <!-- <h2>La mejor conferencia de diseño web en español</h2>
-    <p>
-        Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut
-        bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci.
-        Maecenas luctus mi at ex blandit vehicula.
-        Morbi porttitor tempus euismod.
-    </p> -->
-    </section>
-    <!--seccion-->
-
     <section class="precios seccion">
         <h2>servicios</h2>
         <div class="contenedor">
@@ -75,8 +86,6 @@
                 <li>
                     <div class="tabla-precio">
                         <h3>Régimen de Incorpoación Fiscal</h3>
-                        <!-- <p class="numero">$647</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>Asesoría Contable y Fiscal</li>
                             <li>Cálculo de impuestos</li>
@@ -90,8 +99,6 @@
                 <li>
                     <div class="tabla-precio">
                         <h3>Actividad Empresarial</h3>
-                        <!-- <p class="numero">$877</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>Asesoría Contable y Fiscal</li>
                             <li>Cálculo de impuestos</li>
@@ -102,18 +109,14 @@
                         <a href="#" class="button ">Contratar</a>
                     </div>
                 </li>
-
                 <li>
                     <div class="tabla-precio">
                         <h3>Actividad Empresarial Persona Moral</h3>
-                        <!-- <p class="numero">$2647</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>Asesoría Contable y Fiscal</li>
                             <li>Cálculo de impuestos</li>
                             <li>Presentación de declaración mensual de ISR, IVA y DIOT</li>
                             <li>Envío de Contabilidad Electrónica</li>
-                            <!-- <li>Acceso a sistema contable</li> -->
                             <li>Facturación electrónica incluida</li>
                         </ul>
                         <a href="#" class="button">Contratar</a>
@@ -122,7 +125,6 @@
             </ul>
         </div>
     </section>
-
     <section class="precios seccion">
         <h2>servicios Adicionales</h2>
         <div class="contenedor">
@@ -130,8 +132,6 @@
                 <li>
                     <div class="tabla-precio">
                         <h3>Actualizaciones fiscales</h3>
-                        <!-- <p class="numero">$647</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>Cálculo de impuesto</li>
                             <li>Presentacón de declaraciones atrasadas.</li>
@@ -143,8 +143,6 @@
                 <li>
                     <div class="tabla-precio">
                         <h3>Nómina</h3>
-                        <!-- <p class="numero">$877</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>Cálculo del monto total sobre nómina</li>
                             <li>Cálculo y presentación del ISN</li>
@@ -154,18 +152,14 @@
                         <a href="#" class="button ">Contratar</a>
                     </div>
                 </li>
-
                 <li>
                     <div class="tabla-precio">
                         <h3>Análisis Fiscal</h3>
-                        <!-- <p class="numero">$2647</p>
-                    <p class="min">por mes</p> -->
                         <ul>
                             <li>¿Qué obligaciones tienes registradas en el SAT?</li>
                             <li>¿Qué obligaciones tienes pendientes con el SAT?</li>
                             <li>Presentación de declaración mensual de ISR, IVA y DIOT</li>
                             <li>Datos relevantes de tu facturación en base a los últimos 6 meses.</li>
-                            <!-- <li>Acceso a sistema contable</li> -->
                             <li>Consejos para mejorar tu situación.</li>
                         </ul>
                         <a href="#" class="button">Contratar</a>
@@ -174,395 +168,613 @@
             </ul>
         </div>
     </section>
-
-
-
-    <!-- 
-    <section class="seccion contenedor">
-        <h2>Calendario de Eventos</h2>
-
-        <div class="calendario">
-
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-09
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">HTML5 y CSS3</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 02:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
+    <button type="button" class="irAbajo">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</button>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+					<h2 class="tituloEquipoTrabajo text-white b-b-3px-white my-4 text-center text-uppercase">
+                        Únete a nuestro equipo de trabajo
+                    </h2>
+                    <div class="row contenedor-vacantes-principal">
+                        <ul class="mb-0 p-0 contenedor-titulo-vacante text-center">
+                            <li class="list-group-item active tituloVacantes d-flex justify-content-center align-items-center" aria-current="true">
+                                <i class="fa fa-check"></i>
+                                <h3 class="mb-0">Vacantes disponibles</h3>
+                            </li>
+                        </ul>
+                        <div class="col-12 col-md-6 col-lg-3 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Project manager
+                                </li>
+                                <li class="list-group-item active-vacante">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero civil
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Arquitecto
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Mecánico automotriz
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero topógrafo
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero industrial
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero residente
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Analista de costos
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero metalmecánico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero electromecánico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero eléctrico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Geólogos
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0 bg-white list-group">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Abogado
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Contador público
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Analista de costos
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Administrador
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white p-3 p-lg-5 mt-5 contenedor-personal">
+                        <h3 class="text-center w-auto mb-4 fw-bold text-dark">
+                            Solicito personal para el Área de Ingeniería Civil con experiencia en la realización de las siguientes Actividades:
+                        </h3>
+                        <div class="contenedor-img-ingenieria-civil">
+                            <img 
+                            src="https://albercasdelmar.com/img/imagen_ingenieria_civil.webp" 
+                            alt="Ingeniería Civil">
+                        </div>
+                        <div class="card mx-auto bg-white">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <div class="row contenedor-vacantes mx-0">
+                                        <div class="col-12 col-md-6 col-lg-4 list-group">
+                                            <ul class="pl-0">
+                                                <li class="header-card ">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Diseño
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Planeación
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Construcción
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Manejo de Licitaciones y/o Concursos
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 list-group">
+                                            <ul class="pl-0">
+                                                <li class="header-card ">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Mantenimiento de Infraestructuras
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Supervisión de Obra
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Elaboración de planos
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Generadores y Precios Unitarios
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 list-group pr-0">
+                                            <ul class="pl-0">
+                                                <li class="header-card ">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Estudios de Factibilidad
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Gestión de proyectos
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Funciones Administrativas
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Cuantificaciones
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					<div class="card mt-3">
+						<div class="card-header  tituloCV text-white">
+							<h4 class="card-title  mb-0 p-1">Enviar CV a:</h4>
+						</div>
+						<div class="card-body correosCV">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:info@georiomar.com">info@georiomar.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:ingenierialzc@yahoo.com">ingenierialzc@yahoo.com</a>
+                                </li>
+                                <li class="fst-italic">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    O traer documentación a nuestras instalaciones
+                                </li>
+                            </ul>
+						</div>
+						<div class="row mt-4 p-5">
+							<h3 class="titulo-si-proveedor titulo-vacantes pb-1 mb-3">
+                                Si eres Proveedor del Área Civil, Hidrosanitaria, Estructural, Acabados o Mantenimientos:
+                            </h3>
+							<div class="proveedorCV">
+								<p class="fw-bold mb-0 font-size-18px">Envia CV de la empresa a:</p>
+								<li>
+									<a 
+									class="fw-bold font-size-16px d-flex align-items-center" 
+									href="mailto:info@georiomar.com">
+                                    <i class="bi bi-envelope p-1 fw-bold"></i>
+                                    info@georiomar.com
+									</a>
+								</li>
+								<li>
+									<a 
+									class="fw-bold font-size-16px d-flex align-items-center" 
+									href="mailto:ingenierialzc@yahoo.com">
+                                    <i class="bi bi-envelope p-1"></i>
+                                    ingenierialzc@yahoo.com
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">WordPress</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Como ser freelancer</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">TecnologÃ­as del Futuro PHP</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 05:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Seguridad en la Web</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 07:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">DiseÃ±o UI y UX para mÃ³viles</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-10
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">Angular 5</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">PHP y MySQL</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 12:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">JavaScript Avanzado</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 14:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">SEO en Google</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">De Photoshop a HTML5 y CSS3</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">PHP Intermedio y Avanzado</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 21:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Como crear una tienda online que venda millones en pocos dÃ­a</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Los mejores lugares para encontrar trabajo</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Pasos para crear un negocio rentable </p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">DiseÃ±o UI y UX para mÃ³viles</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-11
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">Laravel</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Crea tu propia API</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 12:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">JavaScript y jQuery</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 14:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando Plantillas para WordPress</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Tiendas Virtuales en Magento</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando una App en Android en una maÃ±ana</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando una App en iOS en una tarde</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Flexbox para principiantes</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 11:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-        </div>
-        <!--.calendario-->
-
-
-
-    <!-- </section> -->
-   <footer class="site-footer">
-        <div class="contenedor clearfix">
-            <div class="footer-informacion">
-                <h3>Sobre <span>contabilizandote</span></h3>
-                 <p>
-                    Nicolás  Bravo 341, Centro, Cd. L. Cárdenas, Mich, Mx.
-                    <br />
-                    Horarios de atención.
-                    <br />
-                    Lunes a viernes de 7:00am a 8:00pm.
-                    <br />
-                    Sábados de 7:00am a 2:00pm.
-                    <br />
-                    Teléfonos:<br />+52 (753) 537 3761,  <br />+52 (753) 139 7277,  <br />+52 (753) 540 5810.
-                  </p>
-            </div>
-            <div class="ultimos-tweets">
-                <h3>Últimas <span>Publicaciones</span></h3>
-                <div class="fb-page" data-href="https://www.facebook.com/contabilidadelyn/" data-tabs="timeline"
-                    data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
-                    data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/contabilidadelyn/" class="fb-xfbml-parse-ignore"><a
-                            href="https://www.facebook.com/contabilidadelyn/">A&amp;C servicios contables.</a>
-                    </blockquote>
+            <div class="row contenidoFooter justify-content-center justify-content-md-between footer-informacion">
+                <div class="row mx-0 p-5 seccion">
+                    <div class="col-12 col-md-6 overflow-hidden">
+                        <h3 class="text-center text-uppercase mb-0 titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            Sobre <span class="estilo-letra">GeoRioMar Proyectos</span>:
+                        </h3>
+                        <h4 class="mb-0 text-uppercase mb-4">
+                            <span class="text-white">Dirección:</span>
+                        </h4>
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1654610659670!5m2!1ses!2smx"
+                        width="" 
+                        height="" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="text-justify p-4 text-white">
+                            Nicolas Bravo 341, Centro, <br> Cd. Lázaro Cárdenas, Mich, MX.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center">
+                        <h3 class="b-b-titulo-principal text-center mb-4 text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Horarios </span>de atención:
+                        </h3>
+                        <div class="horarios-atencion">
+                            <div class="d-flex align-items-center justify-content-center p-0">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Lu. a Vi. de 07:00 am a 08:00 pm</span>
+                            </div>
+                            <div class="d-flex align-items-center p-0 mb-4 justify-content-center">
+                                <i class="fa fa-check"></i>
+                                <span class="d-block">Sábados de 07:00 am a 02:00 pm</span>
+                            </div>
+                        </div>
+                        <h3 class="b-b-titulo-principal mb-4 text-center text-uppercase titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Teléfonos:</span>
+                        </h3>
+                        <div class="text-center">
+                            <ul class="p-2 links numeros-telefonicos">
+                                <li>
+                                    <a href="tel:+52 (753) 537 3761">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 3761
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 139 7277">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 139 7277
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+52 (753) 540 5810">
+                                        &nbsp;<i class="fa fa-phone"></i>&nbsp;+52 (753) 540 5810
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row justify-content-between ultimos-tweets mx-0 seccion">
+                    <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal mb-0 mb-5">
+                        <span class="estilo-letra">Últimas</span> Publicaciones:
+                    </h3>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/contabilidadelyn"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/contabilidadelyn" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/contabilidadelyn">A&S Servicios Contables</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/despachoecheverria"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/despachoecheverria" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/despachoecheverria">Echeverria Asociados, Despacho Legal y Contable</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/creasociedad"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/creasociedad" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/creasociedad">Registro de Negocios y Creación de Sociedades Mexy</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/ContabilidadAmericana"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/ContabilidadAmericana" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/ContabilidadAmericana">Income Taxes USAMEX</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/InmobiliariaLzcRioMar"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/InmobiliariaLzcRioMar" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/InmobiliariaLzcRioMar">Inmobiliaria RioMar</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/ReclutamientoLZC"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/ReclutamientoLZC" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/ReclutamientoLZC">RH Reclutamiento LZC, Mich.</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/traductoractas"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/traductoractas" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/traductoractas">Traducción de documentos</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0 row overflow-hidden mx-auto mb-5">
+                        <div 
+                        class="fb-page p-0 w-100 d-flex justify-content-center" 
+                        data-href="https://www.facebook.com/canadalabor"
+                        data-tabs="timeline" 
+                        data-width=""
+                        data-height="" 
+                        data-small-header="false"
+                        data-adapt-container-width="true" 
+                        data-hide-cover="false" 
+                        data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/canadalabor" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/canadalabor">Contratos para Canada y permisos de trabajo</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 pt-5 seccion">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Redes</span> sociales:
+                        </h3>
+                        <nav class="redes-sociales text-center mb-4">
+                            <a 
+                            target="_blanck" 
+                            href="https://www.facebook.com/contabilidadelyn/">
+                                <i
+                                class="fa fa-facebook" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blanck" 
+                            href="https://twitter.com/icamar-constructora">
+                                <i
+                                class="fa fa-twitter" 
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="#">
+                                <i 
+                                class="fa fa-instagram"
+                                aria-hidden="true"></i>
+                            </a>
+                            <a 
+                            target="_blank" href="https://www.youtube.com/channel/UCl7HIZRNlJPgbO18pK6N_7A">
+                                <i 
+                                class="fa fa-youtube"
+                                aria-hidden="true"></i>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="menu col-12 col-md-6">
+                        <h3 class="text-center text-uppercase titulo-principal b-b-titulo-principal pb-0 mb-3">
+                            <span class="estilo-letra">Consorcio de</span> empresas:
+                        </h3>
+                        <ul class="links paginasWeb mb-5 text-center">
+                            <li>
+                                Echeverria Asociados:<br>
+                                <a target="_blank" href="https://echeverriaasociados.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.echeverriaasociados.com
+                                </a>
+                            </li>
+                            <li>
+                                Registro de negocios USA:<br>
+                                <a target="_blank" href="https://registrodenegociosusa.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.registrodenegociosusa.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-0 p-5 seccion">
+                    <h3 class="b-b-titulo-principal mb-4 text-uppercase titulo-principal pb-0 mb-3 text-center">
+                        <span class="estilo-letra">Conglomerados de</span> empresas:
+                    </h3>
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <ul class="links paginasWeb">
+                            <li>
+                                Creación de sociedades HLE:<br>
+                                 <a target="_blank" href="https://creaciondesociedadeshle.com">
+                                     <i class="fa fa-globe"></i>
+                                     www.creaciondesociedadeshle.com
+                                 </a>
+                             </li>
+                            <li>
+                                Income Taxes USAMEX:<br>
+                                <a target="_blank" href="https://incometaxesusamex.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.incometaxesusamex.com
+                                </a>
+                            </li>
+                            <li>
+                                FisioMax Rehabilitación:<br>
+                                <a target="_blank" href="https://fisiomaxrehabilitacion.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.fisiomaxrehabilitacion.com
+                                </a>
+                            </li>
+                            <li>
+                                Crece Psicologos:<br>
+                                <a target="_blank" href="https://crecepsicologos.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.crecepsicologos.com
+                                </a>
+                            </li>
+                            <li>
+                                AS Carretera:<br>
+                                <a target="_blank" href="https://ascarretera.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.ascarretera.com
+                                </a>
+                            </li>
+                            <li>
+                                Visas Mexy:<br>
+                                <a target="_blank" href="https://visasmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.visasmexy.com
+                                </a>
+                            </li>
+                             <li>
+                                Inmobiliaria RioMar:<br>
+                                <a target="_blank" href="https://inmobiliariariomar.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.inmobiliariariomar.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center pt-0">
+                        <ul class="links paginasWeb mb-5">
+                            <li>
+                               Elyn consultoría internacional:<br>
+                                <a target="_blank" href="https://elynconsultoriainternacional.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.elynconsultoriainternacional.com
+                                </a>
+                            </li>
+                            <li>
+                                Labor Mexy:<br>
+                                <a target="_blank" href="https://labormexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.labormexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Empleos Mexy:<br>
+                                <a target="_blank" href="https://empleosmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.empleosmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Global Mexy:<br>
+                                <a target="_blank" href="https://globalmexy.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.globalmexy.com
+                                </a>
+                            </li>
+                            <li>
+                                Regularización de clases:<br>
+                                <a target="_blank" href="https://regularizacionclases.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.regularizacionclases.com
+                                </a>
+                            </li>
+                            <li>
+                                Mexican labor force:<br>
+                                <a target="_blank" href="https://mexicanlaborforce.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.mexicanlaborforce.com
+                                </a>
+                            </li>
+                            <li>
+                                Unión migrante:<br>
+                                <a target="_blank" href="https://unionmigrante.com">
+                                    <i class="fa fa-globe"></i>
+                                    www.unionmigrante.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="menu">
-                <h3>Redes <span>sociales</span></h3>
-                <nav class="redes-sociales">
-                    <a target="_blanck" href="https://www.facebook.com/contabilidadelyn"><i class="fab fa-facebook"
-                            aria-hidden="true"></i></a>
-                    <a target="_blanck"
-                        href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
-                            class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <!-- <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram"
-                            aria-hidden="true"></i></a> -->
-                </nav>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row mx-0 justify-content-center">
+                <p class="copyright fw-bold text-white">
+                    <span class="text-center d-block">©Todos los Derechos Reservados</span>
+                    <span class="text-center d-block">Contabilizandote <span class="anio-actual">2022</span></span>
+                </p>
             </div>
         </div>
-
-        <p class="copyright">
-            Todos los derechos Reservados CONTABILIZATE 2021.
-        </p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
@@ -570,9 +782,10 @@
     <script src="js/main.js"></script>
     <script src="js/cotizador.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
-        async defer></script>
-
+    async defer></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
-        nonce="I0coc6CJ"></script>
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
+    nonce="I0coc6CJ"></script>
+</body>
+</html>
