@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contacto - Contabilizandote</title>
+    <title>Inicio - Contabilizandote</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Galería -->
+    <link rel="stylesheet" href="css/photoswipe-dynamic-caption-plugin.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/otrosEstilosPhotoSwipe.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDL7KCQ2VB"></script>
     <script>
@@ -28,7 +32,7 @@
         gtag('config', 'G-ZDL7KCQ2VB');
     </script>
 </head>
-<body class="registro">
+<body class="index">
     <div class="barra">
         <div class="contenedor clearfix">
             <div class="logo w-100 d-flex justify-content-center">
@@ -85,74 +89,223 @@
             </nav>
         </div>
     </div>
-    <seccion class="seccion">
-        <div class="contenedor my-5">
-            <h2 class="centrar-texto">Contacto</h2>
-            <div class="grid centrar-columnas ">
-                <div class="columnas-12">
-                    <img 
-                    class="w-100"
-                    src="https://image.freepik.com/foto-gratis/primer-plano-manos-contador-contando-calculadora_1262-3170.jpg" 
-                    alt="Imagen contacto">
+    <main class="container">
+        <div class="container contenedor-title-seccion my-5 text-center">
+            <h1>GALERÍA DE IMÁGENES</h1>
+        </div>
+        <div class="pswp-gallery container my-5 align-items-stretch" id="gallery">
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_1.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_1.jpg" alt="Imagen 1" />
+                    </a>
                 </div>
-                <div class="columnas-10 formulario-contacto">
-                    <form action="#" class="contact-form">
-                        <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" class="name" placeholder="Tu Nombre">
-                        </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" class="telefono" placeholder="Tu Telefono">
-                        </div>
-                        <div class="campo">
-                            <label for="email">E-Mail</label>
-                            <input type="email" id="email" class="email" placeholder="Tu Correo Electrónico">
-                        </div>
-                        <div class="campo mensaje">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" class="message"></textarea>
-                        </div>
-                        <div class="campo enviar">
-                            <input type="submit" value="Enviar" class="btn-two btn-primario">
-                        </div>
-                    </form>
+            </div>
+            <div class="row col-12 col-md-4 mx-sm-0 mx-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_2.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_2.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_3.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_3.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_4.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_4.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_5.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_5.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_6.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_6.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_7.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_7.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_8.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_8.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_9.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_9.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_10.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_10.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_11.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_11.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_12.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_12.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_13.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_13.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_14.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_14.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_15.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_15.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_16.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_16.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_17.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_17.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_18.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_18.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_19.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_19.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_20.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_20.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_21.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_21.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_22.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_22.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_23.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_23.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_24.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_24.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_25.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_25.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_26.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_26.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_27.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_27.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_28.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_28.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4 mx-sm-0 mx-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_29.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_29.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/gallery/imagen_30.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+                        <img src="img/gallery/imagen_30.jpg" alt="Imagen 1" />
+                    </a>
                 </div>
             </div>
         </div>
-    </seccion>
-    <section class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Contáctanos</h2>
-        <p class="mb-0">
-            Dirección:
-        </p>
-        <p>
-            Nicolás Bravo 341, Centro, Cd. L. Cárdenas, Mich., MX.
-        </p>
-        <hr class="hr-footer">
-        <p class="mb-0">
-            Teléfonos:
-        </p>
-        <p class="mb-0">
-            +52 (753) 537 3761
-        </p>
-        <p class="mb-0">
-            +52 (753) 139 7277
-        </p>
-        <p class="mb-0">
-            +52 (753) 540 5810
-        </p>
-        <hr class="hr-footer">
-        <p class="mb-0">
-            Correo:
-        </p>
-        <p class="mb-0">
-            <a href="mailto:info@contabilizandote.com">info@contabilizandote.com</a>
-        </p>
-        <p class="mb-0">
-            <a href="mailto:ingenierialzc@yahoo.com">ingenierialzc@yahoo.com</a>
-        </p>
-    </section>
+    </main>
     <button type="button" class="irAbajo">
 		<i class="fa fa-arrow-down" aria-hidden="true"></i>
 	</button>
@@ -768,6 +921,8 @@
     <script src="js/cotizador.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
     async defer></script>
+    <!-- Galería -->
+    <script type="module" src="js/instanciaPhotoSwipe.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
