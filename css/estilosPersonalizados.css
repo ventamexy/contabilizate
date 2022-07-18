@@ -37,3 +37,7 @@ li {
 .menuPrincipal li i {
     color: #fff;
 }
+
+.sombra {
+    box-shadow: 0px 103px 25px rgb(0, 0, 0, 0.5);
+}
