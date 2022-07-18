@@ -9,3 +9,8 @@ li {
 .pr-0 {
     padding-right: 0px!important;
 }
+
+.hr-footer {
+    width: 25%;
+    margin: 8px auto;
+}
