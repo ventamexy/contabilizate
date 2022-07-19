@@ -27,10 +27,13 @@ window.addEventListener("load", function() {
 $(document).on("scroll", function() {
 
     let scrollYPosicionActual = $(document)[0].scrollingElement.scrollTop;
-    if ( scrollYPosicionActual >= 200 ) {
-        $("#navbar")[0].classList.add("menu-fijado");
-    } else {
-        $("#navbar")[0].classList.remove("menu-fijado");
+    let menuSuperior = $("#navbar");
+    if ( menuSuperior.length > 0 ) {
+        if ( scrollYPosicionActual >= 200 ) {
+            menuSuperior[0].classList.add("menu-fijado");
+        } else {
+            menuSuperior[0].classList.remove("menu-fijado");
+        }
     }
 
     var scrollY = $(document)[0].scrollingElement;
