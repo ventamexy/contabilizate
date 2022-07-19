@@ -21,6 +21,11 @@
     font-size: 19px;
 }
 
+.menu-fijado {
+    position: fixed;
+    z-index: 1000;
+}
+
 /* Estilos footer */
 
 footer a {
