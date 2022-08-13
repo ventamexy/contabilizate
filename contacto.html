@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDL7KCQ2VB"></script>
@@ -100,28 +101,64 @@
                     src="https://image.freepik.com/foto-gratis/primer-plano-manos-contador-contando-calculadora_1262-3170.jpg" 
                     alt="Imagen contacto">
                 </div>
-                <div class="columnas-10 formulario-contacto">
-                    <form action="#" class="contact-form">
-                        <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" class="name" placeholder="Tu Nombre">
+                <form class="frmPrecalificacion w-100">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Nombre:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="nombre">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Apellido paterno:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="apellidoPaterno">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Apellido materno:</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="apellidoMaterno">
+                            </div>
+                            <div class="form-group col-12 col-md-6 col-lg-3">
+                                <label for="nombre">Email:</label>
+                                <input 
+                                type="email" 
+                                class="form-control"
+                                name="email">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
                         </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" class="telefono" placeholder="Tu Telefono">
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="nombre">Mensaje:</label>
+                                <textarea 
+                                class="form-control"
+                                rows="8"
+                                name="mensaje"></textarea>
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <button 
+                                class="btn btn-success btnEnviarPrecalificacion" 
+                                type="button">
+                                    Enviar solicitud
+                                </button>
+                            </div>
                         </div>
-                        <div class="campo">
-                            <label for="email">E-Mail</label>
-                            <input type="email" id="email" class="email" placeholder="Tu Correo Electrónico">
-                        </div>
-                        <div class="campo mensaje">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" class="message"></textarea>
-                        </div>
-                        <div class="campo enviar">
-                            <input type="submit" value="Enviar" class="btn-two btn-primario">
-                        </div>
-                    </form>
+                    </div>
+                </form>
+                <div class="cargaSpinner d-none">
+                    <div class="circleA">
+                        <div class="circleB"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -584,6 +621,7 @@
     </footer>
     <script src="assets/js/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/bootbox/dist/bootbox.min.js"></script>
     <script src="js/plugins.js"></script>
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
@@ -593,6 +631,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cotizador.js"></script>
+    <script src="js/server/enviarEmail.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
     async defer></script>
     <div id="fb-root"></div>
