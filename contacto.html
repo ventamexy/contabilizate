@@ -19,15 +19,8 @@
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDL7KCQ2VB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-ZDL7KCQ2VB');
-    </script>
+    <link rel="stylesheet" href="css/estilosReCaptcha.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body class="registro">
     <nav class="navbar navbar-expand-lg navbar-light w-100 bg-light" id="navbar">
@@ -145,6 +138,15 @@
                                 name="mensaje"></textarea>
                                 <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
+                            <div class="row d-flex align-items-center position-relative">
+                                <div class="g-recaptcha" data-sitekey="6Le2QQgiAAAAAP2d54GomFwVCLZC51wjwgmXGLBX"></div>
+                                <div class="col-1 position-absolute contenedor-boton">
+                                    <button class="reload-captcha" type="button">
+                                        <i class="fa fa-refresh"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
                             <div class="d-flex justify-content-center my-3">
                                 <button 
                                 class="btn btn-success btnEnviarPrecalificacion" 
@@ -629,6 +631,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/funcionesGenerales.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cotizador.js"></script>
     <script src="js/server/enviarEmail.js"></script>

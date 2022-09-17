@@ -47,6 +47,10 @@ window.addEventListener("load", function() {
                 throw "El contenido del mensaje no puede ser vacío y debe de tener una longitud mínima de 200 caracteres y máxima de 3500.";
             } mensaje.removeClass("campoValidacion");
 
+            // --- Validación de la contestación del reCaptcha.
+            if ( grecaptcha.getResponse().length == 0 ) {
+                throw "Necesita solucionar el captcha para seguir con el proceso del envío del email.";
+            }
 
             let frmPreCalificacion = $(".frmPrecalificacion").serialize();
 
@@ -91,6 +95,7 @@ window.addEventListener("load", function() {
                         $(".cargaSpinner").addClass("d-none");
 
                         addImageNotificacion(imgNotificacion, estadoEnvio);
+                        grecaptcha.reset();
 
                     }
 
@@ -112,6 +117,7 @@ window.addEventListener("load", function() {
             $(".cargaSpinner").addClass("d-none");
 
             addImageNotificacion(imgNotificacion, estadoEnvio);
+            grecaptcha.reset();
 
         }
 
